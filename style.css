@@ -1,15 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
 
-  @media only screen and (max-width: 600px) {
-    main {
-      padding: 50px 10px;
-      background-color: rgb(38, 38, 77) !important; 
-    }
-
-  }
- 
-
 body {
   margin: 0;
   padding: 0;
@@ -23,9 +14,7 @@ body {
 }
 main {
   height: 100vh;
-  /* background-color: #222222; */
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -33,7 +22,7 @@ main {
 .card {
   max-width: 1000px;
   background-color: #0d1b2a;
-  padding: 20px;
+  padding: 10px;
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -41,6 +30,7 @@ main {
    box-shadow: 0 0 20px #00f5d4;
   width: 100%;
   transition: all 0.3s ease;
+  height: 300px;
 }
 .card_content {
   color: #fff;
@@ -55,10 +45,10 @@ main {
 }
 .line{
   color: green;
-  border-left: 5px solid ;
+  border-right: 5px solid ;
   margin-left: 3rem;
   margin-top: 2rem;
-  height:320px;
+  height:250px;
 }
 .hobbies-dislikes{
   color: white;
@@ -69,7 +59,7 @@ main {
 }
 .hobbies-dislikes h4{
   margin: 10px;
-  font-size: 25px;
+  font-size: 20px;
 }
 .hobbies-dislikes li{
   font-style:italic;
@@ -83,34 +73,34 @@ main {
     text-decoration: line-through;
 }
 .profile_name {
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 0;
   animation: glowRotate 6s infinite;
   text-shadow: 0 0 10px currentColor;
+  margin-top:-10px;
 }
 
 @keyframes glowRotate {
   0% {
-    color: black;
-    text-shadow: 0 0 10px black;
+    color: green;
+    text-shadow: 0 0 10px green;
   }
   33% {
-    color: blue;
-    /* text-shadow: 0 0 5px blue; */
+    color: yellow;
+    text-shadow: 0 0 5px yellow;
   }
   66% {
     color: white;
     text-shadow: 0 0 10px white;
   }
   100% {
-    color: black;
-    text-shadow: 0 0 10px black;
+    color: green;
+    text-shadow: 0 0 10px green;
   }
 }
-.role{
-  text-decoration: underline yellow 2px solid ;
+.role {
+  text-decoration: underline yellow 2px solid;
   font-size: 1.2rem;
-  
 }
 
 .bio {
@@ -125,9 +115,10 @@ nav{
   display: flex;
   justify-content: center;
   gap: 45px;
-  font-size: 40px;
+  font-size: 35px;
   margin-top: 20px;
   margin-bottom: 10px;
+
 }
 /* GitHub */
 .git{
@@ -194,11 +185,65 @@ button:hover {
   transform: scale(1.05);
 }
 .image_wrapper {
-  height: 350px;
-  width: 250px;
+  height: 270px;
+  width: 200px;
   border-radius: 20px;
 }
 .profile_image {
-  width: 250px;
-  height: 350px;
+  width: 200px;
+  height: 270px;
+}
+
+/* RESPONSIVENESS */
+@media screen and (min-width:300px) and (max-width:450px) {
+  .card{
+      max-width: 320px;
+  background-color: #0d1b2a;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  width: 400px;
+  transition: all 0.3s ease;
+  height: fit-content;
+
+  }
+  main{
+      height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    margin-top:6rem;
+    margin-bottom:6rem;
+  }
+    .card_content{
+    display:flex;
+    flex-direction:column;
+    text-align: center;
+      width: 300px;
+  }
+  .profile_image{
+      margin-left:20px;
+  }
+  .first-half{
+  margin-left:10px;
+    margin-top: 2rem;
+}
+nav{
+  gap:30px;
+  font-size:25px;
+   margin-left:20px;
+}
+  .line {
+  color: green;
+  border-bottom: 5px solid;
+  width: 270px;
+  height: 0;
+  margin-top:5px;
+  margin-left:20px;
+}
+.hobbies-dislikes{
+  margin-top:5px;
+  margin-bottom:1px;
+}
 }
