@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+
+  @media only screen and (max-width: 600px) {
+    main {
+      padding: 50px 10px;
+      background-color: rgb(38, 38, 77) !important; 
+    }
+
+  }
+ 
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif !important;
+     background-image: url("neon3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+main {
+  height: 100vh;
+  /* background-color: #222222; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  max-width: 1000px;
+  background-color: #0d1b2a;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  border-radius: 500px 20px 20px 500px;
+   box-shadow: 0 0 20px #00f5d4;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+.card_content {
+  color: #fff;
+  text-align: left;
+  font-weight: 700;
+  display: flex;
+  flex-direction:row;
+}
+.first-half{
+  margin-left: -50px;
+    margin-top: 2rem;
+}
+.line{
+  color: green;
+  border-left: 5px solid ;
+  margin-left: 3rem;
+  margin-top: 2rem;
+  height:320px;
+}
+.hobbies-dislikes{
+  color: white;
+  display: flex;
+  justify-content: center;
+ margin-top: 5rem;
+
+}
+.hobbies-dislikes h4{
+  margin: 10px;
+  font-size: 25px;
+}
+.hobbies-dislikes li{
+  font-style:italic;
+  font-size: 0.9rem;
+}
+.hobbies{
+  color:rgb(7, 213, 7);
+}
+.dislikes{
+  color:rgb(255, 0, 0);
+    text-decoration: line-through;
+}
+.profile_name {
+  font-size: 2.5rem;
+  line-height: 0;
+  animation: glowRotate 6s infinite;
+  text-shadow: 0 0 10px currentColor;
+}
+
+@keyframes glowRotate {
+  0% {
+    color: black;
+    text-shadow: 0 0 10px black;
+  }
+  33% {
+    color: blue;
+    /* text-shadow: 0 0 5px blue; */
+  }
+  66% {
+    color: white;
+    text-shadow: 0 0 10px white;
+  }
+  100% {
+    color: black;
+    text-shadow: 0 0 10px black;
+  }
+}
+.role{
+  text-decoration: underline yellow 2px solid ;
+  font-size: 1.2rem;
+  
+}
+
+.bio {
+  font-size: 0.8rem;
+  color: #eeeeee;
+  /* white-space: nowrap; */
+  overflow: hidden;
+  font-style: italic;
+  /* text-overflow: ellipsis; */
+}
+nav{
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+  font-size: 40px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+/* GitHub */
+.git{
+  color: white;
+}
+.git:hover{
+  color:black;
+  scale: 1.5;
+  transition: all 0.5s ease-in-out;
+  transform: rotate(360deg);
+}
+/* Twitter */
+.x{
+  color: black;
+}
+.x:hover{
+  color:whitesmoke;
+  scale: 1.5;
+  transition: all 0.5s ease-in-out;
+  transform: rotate(360deg);
+}
+/* Discord */
+.dis{
+  color: rgb(135, 38, 246);
+}
+.dis:hover{
+  color:black;
+  scale: 1.5;
+  transition: all 0.5s ease-in-out;
+  transform: rotate(360deg);
+}
+/* LinkedIn */
+.lin{
+  color: rgb(17, 128, 246);
+}
+.lin:hover{
+  color:black;
+  scale: 1.5;
+  transition: all 0.5s ease-in-out;
+  transform: rotate(360deg);
+}
+/* Telegram */
+.tel{
+  color: rgb(17, 128, 246);
+}
+.tel:hover{
+  color:black;
+  scale: 1.5;
+  transition: all 0.5s ease-in-out;
+  transform: rotate(360deg);
+}
+button {
+  width: 80%;
+  padding: 10px;
+  border-radius: 10px;
+  background: #334191;
+  border: 0;
+  color: white;
+}
+button:hover {
+  background: #556cd6;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.05);
+}
+.image_wrapper {
+  height: 350px;
+  width: 250px;
+  border-radius: 20px;
+}
+.profile_image {
+  width: 250px;
+  height: 350px;
+}

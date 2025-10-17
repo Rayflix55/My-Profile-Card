@@ -1,0 +1,113 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/7401a24b2f.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Rayflix || Profile Card</title>
+  </head>
+  <body>
+    <main>
+      <article class="card" data-testid="test-profile-card">
+        <figure class="image_wrapper">
+          <img
+            src="Web3_Rayflix3.png"
+            alt="Rayflix"
+            class="profile_image"
+            data-testid="test-user-avatar"
+          />
+        </figure>
+        <section class="card_content">
+<div class="first-half">
+            <h3 class="profile_name" data-testid="test-user-name">RAYFLIX</h3>
+          <h4 class="role">
+Frontend Web Developer
+          </h4>
+          <p class="bio" data-testid="test-user-bio">
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, facilis enim praesentium hic ad nobis ducimus vel aliquid sequi tempore doloribus incidunt provident omnis blanditiis corporis officia itaque sit eos.
+          </p>
+          <nav class="social_links" data-testid="test-user-social-links">
+            <a
+              href="https://github.com/Rayflix55"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-github"
+              class="git"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a
+              href="https://twitter.com/web3rayflix"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-twitter"
+              class="x"
+            >
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a
+              href="https://discord.gg/qgqfbnPE"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-discord"
+              class="dis"
+            >
+              <i class="fa-brands fa-discord"></i>
+            </a>
+            <a
+              href="https://linkedin.com/in/akpe-samuel-993971329"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-linkedin"
+              class="lin"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+             <a
+              href="https://t.me/rayflix55"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-telegram"
+              class="tel"
+            >
+              <i class="fa-brands fa-telegram"></i>
+            </a>
+          </nav>
+          <!-- Will be injected with JS -->
+          <time class="current_time">
+            <p id="time" data-testid="test-user-time"></p>
+          </time>
+</div>
+<hr class="line">
+
+</hr>
+          <section class="card_footer">
+            <div class="hobbies-dislikes">
+              <div class="section">
+                <h4 class="hobbies">Hobbies</h4>
+                <ul data-testid="test-user-hobbies">
+                  <li>Coding</li>
+                  <li>Blockchain Research</li>
+                  <li>Technical Writing</li>
+                </ul>
+              </div>
+              <div class="section">
+                <h4 class="dislikes">Dislikes</h4>
+                <ul data-testid="test-user-dislikes">
+                  <li>Centralized Systems</li>
+                  <li>Poor Documentation</li>
+                  <li>Security Vulnerabilities</li>
+                </ul>
+              </div>
+            </div>
+            <!-- <button>Hire Me</button> -->
+          </section>
+        </section>
+      </article>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
