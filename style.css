@@ -195,15 +195,15 @@ button:hover {
 }
 
 /* RESPONSIVENESS */
-@media screen and (min-width:300px) and (max-width:450px) {
+/* 300PX TO 389PX */
+@media screen and (min-width:300px) and (max-width:389px) {
   .card{
-      max-width: 320px;
+      max-width: 280px;
   background-color: #0d1b2a;
   padding: 10px;
   display: flex;
   flex-direction: column;
   border-radius: 20px;
-  width: 400px;
   transition: all 0.3s ease;
   height: fit-content;
 
@@ -213,8 +213,62 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-    margin-top:6rem;
-    margin-bottom:6rem;
+    margin-top:10rem;
+    margin-bottom:10rem;
+  }
+    .card_content{
+    display:flex;
+    flex-direction:column;
+    text-align: center;
+      width: 260px;
+  }
+  .profile_image{
+      margin:auto;
+  }
+  .first-half{
+  margin-left:10px;
+    margin-top: 2rem;
+}
+nav{
+  gap:30px;
+  font-size:25px;
+   margin-left:20px;
+}
+  .line {
+  color: green;
+  border-bottom: 5px solid;
+  width: 240px;
+  height: 0;
+  margin-top:5px;
+  margin-left:20px;
+}
+.hobbies-dislikes{
+  margin-top:5px;
+  margin-bottom:1px;
+}
+}
+
+
+/* 390PX TO 540PX */
+@media screen and (min-width:390px) and (max-width:550px) {
+  .card{
+      max-width: 320px;
+  background-color: #0d1b2a;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  height: fit-content;
+
+  }
+  main{
+      height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    margin-top:7rem;
+    margin-bottom:7rem;
   }
     .card_content{
     display:flex;
