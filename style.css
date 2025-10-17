@@ -83,7 +83,7 @@ main {
 @keyframes glowRotate {
   0% {
     color: green;
-    text-shadow: 0 0 10px green;
+    text-shadow: 0 0 10px gree;
   }
   33% {
     color: yellow;
@@ -197,16 +197,45 @@ button:hover {
 /* RESPONSIVENESS */
 /* 300PX TO 389PX */
 @media screen and (min-width:300px) and (max-width:389px) {
+    body{
+  background-image: url("neon4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  }
+  @keyframes glowRotate {
+  0% {
+    color:  #3a86ff;
+    text-shadow: 0 0 10px #3a86ff;
+  }
+  33% {
+    color:  #3a86ff;
+    text-shadow: 0 0 5px  #3a86ff;
+  }
+  66% {
+    color: white;
+    text-shadow: 0 0 10px white;
+  }
+  100% {
+    color:  #ff00ff;
+    text-shadow: 0 0 10px #ff00ff;
+  }
+}
+.role {
+  text-decoration: underline #3a86ff 2px solid;
+  font-size: 1.2rem;
+}
   .card{
       max-width: 280px;
-  background-color: #0d1b2a;
+  background-color: #19033d;
   padding: 10px;
   display: flex;
   flex-direction: column;
   border-radius: 20px;
   transition: all 0.3s ease;
   height: fit-content;
-
+  box-shadow: 0 0 20px #9b40ec;
   }
   main{
       height: 100vh;
@@ -235,7 +264,7 @@ nav{
    margin-left:20px;
 }
   .line {
-  color: green;
+ color:  #ff00ff;
   border-bottom: 5px solid;
   width: 240px;
   height: 0;
@@ -246,20 +275,54 @@ nav{
   margin-top:5px;
   margin-bottom:1px;
 }
+.hobbies{
+ color:#3a86ff;
+}
 }
 
 
 /* 390PX TO 540PX */
 @media screen and (min-width:390px) and (max-width:550px) {
+  body{
+  background-image: url("neon4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  }
+  @keyframes glowRotate {
+  0% {
+    color:  #3a86ff;
+    text-shadow: 0 0 10px #3a86ff;
+  }
+  33% {
+    color:  #3a86ff;
+    text-shadow: 0 0 5px  #3a86ff;
+  }
+  66% {
+    color: white;
+    text-shadow: 0 0 10px white;
+  }
+  100% {
+    color:  #ff00ff;
+    text-shadow: 0 0 10px #ff00ff;
+  }
+}
+.role {
+  text-decoration: underline #3a86ff 2px solid;
+  font-size: 1.2rem;
+}
+
   .card{
       max-width: 320px;
-  background-color: #0d1b2a;
+  background-color: #19033d;
   padding: 10px;
   display: flex;
   flex-direction: column;
   border-radius: 20px;
   transition: all 0.3s ease;
   height: fit-content;
+   box-shadow: 0 0 20px #9b40ec;
 
   }
   main{
@@ -289,7 +352,7 @@ nav{
    margin-left:20px;
 }
   .line {
-  color: green;
+ color:  #ff00ff;
   border-bottom: 5px solid;
   width: 270px;
   height: 0;
@@ -299,5 +362,8 @@ nav{
 .hobbies-dislikes{
   margin-top:5px;
   margin-bottom:1px;
+}
+.hobbies{
+ color:#3a86ff;
 }
 }
