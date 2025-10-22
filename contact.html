@@ -1,44 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us | HNG13</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <main>
-    <header>
-      <h1>Contact Us</h1>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-      </nav>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | HNG13</title>
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Contact Us</h1>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+        </nav>
+      </header>
 
-    <form id="contactForm" novalidate>
-      <label for="name">Full Name</label>
-      <input id="name" name="name" data-testid="test-contact-name" required aria-describedby="error-name">
+      <form
+        action="https://formsubmit.co/rayflix55@gmail.com"
+        method="POST"
+        data-testid="test-contact-form"
+        onsubmit="return submitForm(event)"
+      >
+        <!-- Redirect to thanks.html after submission -->
+        <input
+          type="hidden"
+          name="_next"
+          value="thanks.html"
+        />
 
-      <p class="error" id="error-name" data-testid="test-contact-error-name"></p>
+        <input type="hidden" name="_subject" value="New Portfolio Contact!" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_template" value="table" />
+        <input
+          type="hidden" 
+          name="_autoresponse"
+          value="Thank you for contacting me! I'll get back to you soon."
+        />
+        
+        <!-- Full Name -->
+        <label for="name">Full Name</label>
+        <input
+          id="name"
+          name="name"
+          type="text"
+          required
+          pattern="[A-Za-z\s]+"
+          title="Please enter letters only (A-Z)."
+          placeholder="Enter your full name"
+          data-testid="test-contact-name"
+        />
+        <p
+          class="error"
+          id="error-name"
+          data-testid="test-contact-error-name"
+        ></p>
 
-      <label for="email">Email</label>
-      <input id="email" name="email" type="email" data-testid="test-contact-email" required aria-describedby="error-email">
-      <p class="error" id="error-email" data-testid="test-contact-error-email"></p>
+        <!-- Email -->
+        <label for="email">Email</label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          required
+          title="Please enter a valid email (name@example.com)."
+          placeholder="name@example.com"
+          data-testid="test-contact-email"
+        />
+        <p
+          class="error"
+          id="error-email"
+          data-testid="test-contact-error-email"
+        ></p>
 
-      <label for="subject">Subject</label>
-      <input id="subject" name="subject" data-testid="test-contact-subject" required aria-describedby="error-subject">
-      <p class="error" id="error-subject" data-testid="test-contact-error-subject"></p>
+        <!-- Subject -->
+        <label for="subject">Subject</label>
+        <input
+          id="subject"
+          name="subject"
+          type="text"
+          required
+          pattern="[A-Za-z0-9\s]+"
+          title="Letters and numbers only."
+          placeholder="Subject"
+          data-testid="test-contact-subject"
+        />
+        <p
+          class="error"
+          id="error-subject"
+          data-testid="test-contact-error-subject"
+        ></p>
 
-      <label for="message">Message</label>
-      <textarea id="message" name="message" data-testid="test-contact-message" required aria-describedby="error-message"></textarea>
-      <p class="error" id="error-message" data-testid="test-contact-error-message"></p>
+        <!-- Message -->
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          minlength="10"
+          required
+          title="Message must be at least 10 characters long."
+          placeholder="Type your message here..."
+          data-testid="test-contact-message"
+        ></textarea>
+        <p
+          class="error"
+          id="error-message"
+          data-testid="test-contact-error-message"
+        ></p>
 
-      <button type="submit" data-testid="test-contact-submit">Send Message</button>
-      <p id="success" class="success" data-testid="test-contact-success" hidden>✅ Message sent successfully!</p>
-    </form>
-  </main>
+        <!-- Phone Number -->
+        <label for="phone">Phone Number</label>
+        <input
+          id="phone"
+          name="phone"
+          type="tel"
+          pattern="[0-9]{10,15}"
+          title="Enter only numbers (10-15 digits)."
+          placeholder="Enter your phone number"
+          data-testid="test-contact-phone"
+        />
+        <p
+          class="error"
+          id="error-phone"
+          data-testid="test-contact-error-phone"
+        ></p>
 
-  <script src="script.js"></script>
-</body>
+        <!-- Submit -->
+        <button type="submit" data-testid="test-contact-submit">
+          Send Message
+        </button>
+      </form>
+    </main>
+
+    <script src="contact.js"></script>
+  </body>
 </html>

@@ -1,22 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Dancing+Script:wght@400..700&display=swap');
 
-/* body{
-    background-image: url("bg-image.jpg");
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-size: cover;
-    background-position: center;
-    box-sizing: border-box;
-
-}
-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid #000;
-} */
-
 * {
   box-sizing: border-box;
 }
@@ -30,7 +13,6 @@ body {
   margin: 0;
   padding: 20px;
   background: #f7f9fc;
-  /* color: #222; */
   background-image: url("neon3.jpg");
   background-size: cover;
   background-position: center;
@@ -40,18 +22,6 @@ body {
 }
 
 main {
-  /* display: flex;
-  flex-direction: row;
-  max-width: 80%;
-  margin: auto;
-  background: #fff;
-  padding: 20px;
-  border-radius: 12px;
-  backdrop-filter: blur(10px);
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(3, 6, 205, 0.37);
-  border-radius: 500px 20px 20px 500px;
-  height: fit-content; */
     height: 100vh;
   display: flex;
   justify-content: center;
@@ -73,19 +43,20 @@ img {
   height: 400px;
   width: 300px;
     border-radius: 200px 10px 10px 200px;
-  /* border-radius: 50px; */
-  /* margin-top: 60px; */
 }
 .about{
   display:flex;
   flex-direction:row;
 word-spacing:10px;
-/* margin-right:10/0px; */
+color:yellow;
 }
 nav a {
-  /* margin-bottom:100px; */
   text-decoration: none;
-  /* color: #4a4a4a; */
+    color:#00f5d4;
+}
+nav a:hover {
+  text-decoration: underline;
+  color:#fff;
 }
 nav{
     display:flex;
@@ -121,7 +92,7 @@ nav{
 @keyframes glowRotate {
   0% {
     color: green;
-    text-shadow: 0 0 10px gree;
+    text-shadow: 0 0 10px green;
   }
   33% {
     color: yellow;
@@ -159,12 +130,6 @@ h2 {
 }
 .extra{
     color:green;
-}
-
-@media (max-width: 600px) {
-  main {
-    padding: 15px;
-  }
 }
 .card {
  display: flex;
