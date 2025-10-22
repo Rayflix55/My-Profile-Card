@@ -8,7 +8,7 @@ body {
    font-family: "Agbalumo", system-ui;
   font-weight: 800;
   font-style: italic;
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   color:white;
   margin: 0;
   padding: 20px;
@@ -26,7 +26,6 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-    /* max-width: 1200px; */
   margin: 0 auto;
   transform: scale(0.9);
 }
@@ -43,8 +42,8 @@ footer {
 img {
   display: flex;
   justify-content: center;
-  height: 400px;
-  width: 300px;
+  height: 350px;
+  width: 250px;
     border-radius: 200px 10px 10px 200px;
 }
 .about{
@@ -132,19 +131,20 @@ h2 {
     color:green;
 }
 .extra{
-    color:green;
+  color:green;
 }
+/* card hover design */
 .card {
  display: flex;
   flex-direction: row;
-  max-width: 80%;
+  max-width: 100%;
   margin:auto;
   padding: 20px;
   backdrop-filter: blur(10px);
   background: #0d1b2a;
    box-shadow: 0 0 20px #00f5d4;
   border-radius: 500px 20px 20px 500px;
-  height: 450px;
+  height: fit-content;
     position: relative;
   overflow: hidden;
   transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -181,4 +181,57 @@ h2 {
 .card > * {
   position: relative;
   z-index: 1;
+}
+/* screen responsiveness */
+@media screen and (min-width:300px) and (max-width:1000px) {
+  body{
+  background-image: url("neon4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  }
+  .card{
+      max-width: 100%;
+  background-color: #19033d;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  height: fit-content;
+   box-shadow: 0 0 20px #9b40ec;
+      margin-bottom:17rem;
+  }
+  main{
+      height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+      /* margin-top:7rem; */
+    /* margin-bottom:17rem; */
+
+  }
+  .fir-sec{
+      margin-left: 0px;
+      text-align: center;
+  }
+  .sec-sec{
+      margin-left: 10px;
+      margin-top: 1rem;
+      text-align: left;
+  }
+  img {
+  display: flex;
+  justify-content: left;
+  height: 400px;
+  width: 300px;
+    border-radius:  30px ;
+    margin:auto;
+}
+.img-wrap {
+  /* margin-right: 150px; */
+  margin-top:0.5rem;
+  margin:auto;
+}
 }
